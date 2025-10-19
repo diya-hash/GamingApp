@@ -1,11 +1,17 @@
 package com.games.games.game;
 
 public class GameRunner {
-	MarioGame game;
-	public GameRunner(MarioGame game) {
+//	MarioGame game;
+	private SuperContraGame game;
+	public GameRunner(SuperContraGame game) {
 		this.game = game;
 	}
 	public void run() {
-		System.out.print("Running game : " + game);
+		System.out.println("Running game : " + game);
+		game.up();
+		game.down();
+		game.left();
+		game.right();
+		
 	}
 }
