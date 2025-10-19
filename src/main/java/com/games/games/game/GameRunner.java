@@ -2,8 +2,8 @@ package com.games.games.game;
 
 public class GameRunner {
 //	MarioGame game;
-	private SuperContraGame game;
-	public GameRunner(SuperContraGame game) {
+	private GamingConsole game;
+	public GameRunner(GamingConsole game) {
 		this.game = game;
 	}
 	public void run() {
@@ -12,6 +12,5 @@ public class GameRunner {
 		game.down();
 		game.left();
 		game.right();
-		
 	}
 }
